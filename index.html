@@ -1,0 +1,124 @@
+<!DOCTYPE index.html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vremena goda</title>
+</head>
+<style>
+    .clock {
+        width: 300px;
+        height: 300px;
+        border: 10px groove black;
+        border-radius: 50%;
+        position: relative;
+        margin: auto;
+        background-color: beige;
+        filter: blur(2px);
+    }
+    .arrow1 {
+            width: 45%;
+            height: 10px;
+            background-color: black;
+            position: absolute;
+            transform-origin: left;
+            top: calc(50% - 5px);
+            left: calc(50% - 5px);
+            animation: run 3600s linear infinite;
+        }
+        .arrow2 {
+            width: 35%;
+            height: 10px;
+            background-color: black;
+            position: absolute;
+            transform-origin: left;
+            top: calc(50% - 5px);
+            left: calc(50% - 5px);
+            animation: run 43200s linear infinite;
+        }
+        .arrow_sec {
+            width: 45%;
+            height: 5px;
+            background-color: rgb(184, 58, 75);
+            position: absolute;
+            transform-origin: left;
+            top: calc(50% - 2.5px);
+            left: calc(50% - 2.5px);
+            animation: run 60s linear infinite;
+        }
+        .point {
+            width: 20px;
+            height: 20px;
+            background-color: black;
+            position: absolute;
+            top: calc(50% - 10px);
+            left: calc(50% - 10px);
+            border-radius: 50%;      
+        }
+        @keyframes run {
+            from {transform: rotate(0)}
+            to {transform: rotate(360deg)}
+        }
+    a {
+        text-decoration: none;
+        padding: 20px;
+        font-size: 25px;
+      }
+      ul {
+          list-style-type: none;
+          width: fit-content;
+          margin: auto;
+        
+          padding: 50px;
+          font-size: 50px;
+      }
+      li:nth-child(1) a  {
+             color: rgb(4, 91, 145);
+             font-size: 70px;
+
+        }
+        li:nth-child(2) a {
+            color: rgb(214, 228, 15);
+            font-size: 70px;
+        }
+        
+        li:nth-child(3) a {
+            color: rgb(41, 207, 0);
+            font-size: 70px;
+        }
+        li:nth-child(4) a {
+            color: rgb(228, 127, 13);
+            font-size: 70px;
+        }
+</style>
+<body style="background-image: url(vremena-goda-1.jpg) ; background-size: cover;">
+    
+    <main style="background-color: rgba(0, 255, 234, 0.383); margin: 100px; box-shadow: rrgb(14, 136, 145)5px 5px 10px 5px; padding: 50px 20px; border-radius: 5%;">
+        <h1 style="background-color: rgba(135, 211, 235, 0.719); padding: 50px; border-radius: 20%;">Времена года</h1>
+        <div class="clock">
+            <div class="arrow1"></div>
+            <div class="arrow2"></div>
+            <div class="arrow_sec"></div>
+            <div class="point"></div>
+
+        </div>
+        <Ul>
+            <li> 
+                <a href="Untitled-2.html"> Зима</a>
+            </li> 
+            <li>
+                <a href="Untitled-3.html"> Весна</a>
+            </li>
+            <li>
+                <a href="Untitled-4.html"> Лето</a>
+            </li>
+            <li>
+                <a href="Untitled-1.html"> Осень</a>
+            </li>
+        </Ul>
+        
+    </main>
+   
+
+</body>
+</html>
